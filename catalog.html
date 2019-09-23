@@ -30,10 +30,10 @@
       </span>
 
       <section>
-        <h2>Личный кабинет</h2>
+        <h2 class="visually-hidden">Личный кабинет</h2>
           <ul>
             <li><a href="#">Равшан Джамшутович</a></li>
-            <li><a href="#">Кнопка входа<a/></li>
+            <li><a href="#">Кнопка входа</a></li>
           </ul>
           <ul>
             <li>
@@ -62,7 +62,7 @@
     <main>
 
        <section>
-         <h2>breadcrumbs</h2>
+         <h2 class="visually-hidden">breadcrumbs</h2>
          <a href="index.html"><img src="img/icon-home" alt="Главная страница"></a>
            <ul>
              <li><a href="#">Каталог</a></li>
@@ -75,46 +75,89 @@
 
     <section>
 
-        <h2>Фильтр перфораторов</h2>
+        <h2 class="visually-hidden">Фильтр перфораторов</h2>
 
-        <span>
-          <h2>Выбор сортировки</h2>
+        <div>
             <ul>
               <li>По цене</li>
               <li>По типу</li>
               <li>По функционалу</li>
             </ul>
-        </span>
+        </div>
+
+        <section>
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form method="get" action="https://echo.htmlacademy.ru">
 
         <span>
-          <h2>Сортировка по цене</h2>
+
             <!-- форма с бегунком -->
         </span>
 
-        <span>
-          <h2>Фильтр по производителям<h2>
-            <ul>
-              <li>BOSCH</li>
-              <li>ИНТЕРСКОЛ</li>
-              <li>Makita</li>
-              <LI>DeWALT</li>
-              <li>Hitachi</li>
-            </ul>
-        </span>
+            <fieldset>
+              <legend>Производители:</legend>
+              <ul>
+                <li>
+                <label>
+                  <input type="checkbox" name="bosch" checked>
+                  BOSCH
+                </label>
+                </li>
+                <li>
+                <label>
+                  <input type="checkbox" name="interscol">
+                  ИНТЕРСКОЛ
+                </label>
+                </li>
+                <li>
+                <label>
+                  <input type="checkbox" name="makita" checked>
+                  MAKITA
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+                  <label for="filter-malin-goetz">Malin+Goetz</label>
+                </li>
+                <li>
+                <label>
+                  <input type="checkbox" name="dewalt">
+                  DeWALT
+                </label>
+                </li>
+                <li>
+                <label>
+                  <input type="checkbox" name="hitachi">
+                HITACHI
+                </label>
+                </li>
+              </ul>
+            </fieldset>
 
-        <span>
-          <h2>Фильтр по питанию</h2>
-            <ul>
-              <li>Аккумуляторные</li>
-              <li>Сетевые</li>
-            </ul>
-        </span>
+            <fieldset>
+              <legend>ПИТАНИЕ</legend>
+              <ul>
+                <li>
+                <label>
+                  <input type="radio" name="power" value="battary" checked>
+                  Аккумуляторные
+                </label>
+                </li>
+                <li>
+                <label>
+                  <input type="radio" name="power" value="mains">
+                  Сетевые
+                </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
+        </section>
+    </section>
 
-        <span> Показать </span>
-
-      </section>
-
-      <h2>Каталог перфораторов</h2>
+    <section>
+      <h2 class="visually-hidden">Каталог перфораторов</h2>
       <ul>
         <li>
           <article>
@@ -280,6 +323,17 @@
         </p>
 
       </footer>
+
+      <div>
+        <p>
+          Товар добавлен в корзину!
+        </p>
+        <div>
+        <a href="#">Оформить заказ</a>
+        <a href="#">Продолжить покупки</a>
+      </div>
+      <button type="button">Закрыть</button>
+      </div>
 
   </body>
 </html>
