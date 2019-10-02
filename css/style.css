@@ -238,6 +238,57 @@ a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.catalog-item-title {
+  font-size: 18px;
+}
+
+.old-price {
+  font-size: 17px;
+  color: #999999;
+  text-align: center;
+}
+
+.new-price {
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-align: center;
+}
+
+.buy {
+  line-height: 14px;
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.buy:hover {
+  background-color: #5fbb2d;
+}
+.buy:active {
+  background-color: #518534;
+}
+
+.to-bookmarks {
+  line-height: 14px;
+  color: #32425c;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #63a63e;
+}
+
+.to-bookmarks:hover {
+  color: #32425c;
+  background-color: #ffffff;
+  border-color: #32425c;
+}
+
+.to-bookmarks:active {
+  color: #c1c6ce;
+  background-color: #ffffff;
+  border-color: #c1c6ce;
+}
+
 .footer {
   font-size: 18px;
   line-height: 24px;
@@ -293,4 +344,12 @@ a {
 
 .footer-social a{
   color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
