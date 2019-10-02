@@ -40,8 +40,19 @@ a {
   background-color: #ca2c37;
 }
 
+.icon-search {
+  background-color: #293449;
+}
+
+.icon-search:hover {
+  background-color: #212a3a;
+}
+
 .search {
   background-color: #293449;
+  outline: none;
+  font-family: Cuprum;
+  border: none;
 }
 .search:hover {
   background-color: #212a3a;
@@ -49,7 +60,11 @@ a {
 .search:focus {
   color: #000000;
   background-color: #ffffff;
+  outline: none;
+  font-family: Cuprum;
+  font-size: 17px;
 }
+
 .marks {
   color: #ffffff;
 }
