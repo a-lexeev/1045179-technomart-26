@@ -32,7 +32,6 @@ a {
 .logo {
   background-color: #ee3643;
   font-size: 16px;
-  line-height: 18px;
 }
 
 .logo:hover,
@@ -91,10 +90,15 @@ a {
   color: #ee3643;
 }
 
-.tel-header {
+.header-feedback li{
+  list-style: none;
+}
+
+.tel-header a {
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
+  border: solid white;
 }
 
 .adress-header {
@@ -111,6 +115,7 @@ a {
 .user-navigation {
   background-color: #ffffff;
 }
+
 
 .user {
   font-size: 21px;
@@ -376,4 +381,102 @@ a {
 
 .to-get {
   display: none;
+}
+
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 3151px;
+}
+
+.main-header {
+  width: 1200px;
+  min-height: 320px;
+  margin-bottom: 60px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  height: 42px;
+  background-color: #293449;
+}
+
+.logo {
+  width: 220px;
+  height: 47px;
+}
+
+.search {
+  align-self: flex-start;
+}
+
+.make-order {
+  width: 150px;
+  height: 42px;
+}
+
+.undermarks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 183px;
+  margin-right: 130px;
+}
+
+.description {
+  width: 196px;
+  height: 60px;
+  padding-top: 54px;
+  padding-bottom: 44px;
+}
+
+.header-feedback {
+  align-items: center;
+}
+
+.tel-header {
+  width: 270px;
+  height: 45px;
+  margin-top: 13px;
+  margin-bottom: 11px;
+}
+
+.user-navigation {
+  display: flex;
+  
+}
+.user-navigation ul {
+  list-style: none;
+}
+
+.enter {
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 48px;
+  padding-right: 27px;
+}
+
+.registration {
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.main-navigation {
+  align-items: center;
+  margin: 0 60px;
+}
+
+.site-navigation {
+  display: flex;
+  width: 940px;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 23px;
 }

@@ -11,7 +11,7 @@
   <body>
     <header class="main-header">
 
-      <section class="bookmarks">
+      <section class="navigation">
         <h1 class="visually-hidden">Закладки</h1>
       <a>
         <img class="logo" src="img/logo.svg" alt="Логотип">
@@ -24,11 +24,11 @@
        </label>
       </form>
 
-      <span>
+      <div class="person-area">
         <a class="marks" href="#">Закладки:0</a>
         <a class="marks" href="#">Корзина:0</a>
         <a class="make-order" href="#">Оформить заказ</a>
-     </span>
+     </div>
    </section>
 
   <section class="undermarks">
@@ -39,20 +39,29 @@
         и инструментов для ремонта
       </p>
 
-      <span>
-        <a class="tel-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
-      </span>
-      <p class="adress-header">Санкт-Петербург, ул. Б. Конюшенная, д 19/8</p>
+      <ul class="header-feedback">
+       <li class="tel-header">
+         <a href="tel:+78125550555">
+           <img src="img/icon-phone.svg" alt="Иконка телефона">+7 (812) 555-05-55
+         </a>
+         </li>
+       <li class="adress-header"><p>Санкт-Петербург, ул. Б. Конюшенная, д 19/8</p></li>
+     </ul>
 
-
-        <ul class="user-navigation">
+     <div class="user-navigation">
+        <ul class="enter">
           <li>
-            <a class="user" href="#">Войти</a>
+            <a class="user" href="#">
+               <img src="img/icon-login.svg" alt="Иконка входа">Войти
+             </a>
           </li>
+        </ul>
+        <ul class="registration">
           <li>
             <a class="user" href="#">Регистрация</a>
           </li>
        </ul>
+     </div>
 
     </section>
 
