@@ -100,19 +100,15 @@ a {
 
 .description {
   width: 196px;
-  height: 60px;
-  font-family: Cuprum;
+  font-family: "Cuprum", "PT Sans";
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
   font-style: italic;
   line-height: 1.44;
-  letter-spacing: normal;
   text-align: left;
   color: #ee3643;
 }
 
-.header-feedback li{
+.header-feedback {
   list-style: none;
 }
 
@@ -179,7 +175,7 @@ a {
 
 .main-navigation {
   background-color: #f4f7f9;
-  padding-top: 22px 55px 23px 52px;
+  padding-bottom: 60px;
   margin: 0;
 }
 
@@ -213,6 +209,7 @@ a {
   justify-content: space-between;
   height: 89px;
   background-color: #f2f6f8;
+  font-size: 30px;
 }
 .title-perforator {
   font-size: 30px;
@@ -222,25 +219,24 @@ a {
   padding-left: 30px;
 }
 
-.filters {
+.filter-sorting {
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  margin: 20px auto;
 }
+
+.filters {
+  width: 180px;
+}
+
 .filter-title {
-  width: 220px;
-  height: 38px;
+  width: 202px;
   background-color: #f7f3ec;
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.38;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
   padding-left: 18px;
+  color: #000000;
 }
 .sortings {
   display: flex;
@@ -250,13 +246,9 @@ a {
   margin-left: 20px;
 }
 .sorting {
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.38;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
   padding-left: 18px;
@@ -265,13 +257,9 @@ a {
 .sorting-choice {
   display: flex;
   list-style: none;
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.38;
-  letter-spacing: normal;
   text-align: left;
 }
 .by-price {
@@ -313,11 +301,60 @@ a {
   background-color: #f7f3ec;
   text-align: center;
 }
-.fieldset {
-  border: 0;
+
+.filter fieldset {
+  border: none;
 }
-.filter-input-checkbox {
-  padding-left: 8px;
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #000000;
+}
+
+.filter-input:disabled + label {
+  color: rgba(0, 0, 0, 0.4);;
+
+  opacity: 0.4;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: #663d15;
+}
+
+.pagination-item-current a {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 .about {
@@ -350,11 +387,8 @@ a {
 .about-more {
   width: 220px;
   height: 38px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.29;
   letter-spacing: normal;
   text-align: center;
@@ -420,8 +454,6 @@ a {
 }
 .catalog {
   width: 700px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .catalog-list {
@@ -430,6 +462,7 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 25px;
 }
 
 .catalog-item {
@@ -447,6 +480,13 @@ a {
 
 .catalog-item-title {
   font-size: 18px;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
 }
 
 .old-price {
@@ -580,7 +620,7 @@ a {
 }
 
 .user-navigation {
-  display: flex;l
+  display: flex;
 }
 .lk {
   display: flex;
@@ -629,7 +669,7 @@ a {
   display: flex;
   align-items: center;
   height: 60px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 17px;
   line-height: 1;
   justify-content: space-between;
@@ -706,7 +746,7 @@ a {
 .menu-title {
   width: 111px;
   height: 22px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
@@ -727,7 +767,7 @@ a {
 .menu-description {
   width: 135px;
   height: 38px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
@@ -747,13 +787,10 @@ a {
 .figure-title {
   width: 94px;
   height: 30px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 36px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: left;
   color: #ffffff;
 }
@@ -788,7 +825,7 @@ a {
 }
 .goods {
   display: inline-block;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 14px;
   color: #ffffff;
   padding-top: 10px;
@@ -810,7 +847,7 @@ a {
 
 .bosch {
   width: 155px;
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 18px;
   font-weight: bold;
   line-height: 1.11;
@@ -822,13 +859,10 @@ a {
 .bosch-del {
   width: 67px;
   height: 12px;
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 17px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.06;
-  letter-spacing: normal;
   text-align: center;
   color: #a9a9a9;
 }
@@ -836,15 +870,11 @@ a {
 .bosch-red {
   width: 65px;
   height: 12px;
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 17px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.06;
-  letter-spacing: normal;
   text-align: center;
-  color: var(--white);
 }
 
 .item-button {
@@ -882,13 +912,9 @@ a {
 .tittle-service {
   width: 104px;
   height: 21px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 30px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
   margin: 0;
@@ -897,13 +923,9 @@ a {
 .service-description {
   width: 398px;
   height: 37px;
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.85;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
   padding-top: 38px;
@@ -945,13 +967,9 @@ a {
 }
 
 .tittle-delivery {
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 36px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: left;
   color: #32425c;
   padding-left: 80px;
@@ -960,13 +978,9 @@ a {
 .delivery-description {
   width: 275px;
   height: 83px;
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.85;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
   padding-top: 34px;
@@ -1019,7 +1033,7 @@ a {
 .footer-site-navigation {
   display: flex;
   width: 720px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 17px;
   line-height: 1;
   list-style: none;
@@ -1041,10 +1055,9 @@ a {
 
 .footer-adress {
   width: 322px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 18px;
   line-height: 1.33;
-  letter-spacing: normal;
   text-align: left;
   color: #f3f7f9;
   padding-top: 32px;
@@ -1053,10 +1066,9 @@ a {
 
 .desc-footer {
   min-width: 228px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 16px;
   line-height: 1.13;
-  letter-spacing: normal;
   text-align: left;
   color: #ffffff;
 }
@@ -1080,26 +1092,4 @@ a {
 }
 .footer-feedback a {
   color: #ffda96;
-}
-
-
-/*
-.main-navigation {
-  font-size: 17px;
-  line-height: 17px;
-  font-weight: 400;
-  background-color: #f4f7f9;
-}
-
-.main-navigation a {
-  color: #ffffff;
-}
-
-.main-navigation a:hover {
-  background-color: #293449;
-}
-
-.main-navigation a:active {
-  background-color: #1d2739;
-  color: #8e939c;
 }
